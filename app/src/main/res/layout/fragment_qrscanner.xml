@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pankaj.convokeqr.fragment.QRScanner">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:id="@+id/camera_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/qr_info"
+            />
+        <TextView
+            android:id="@+id/qr_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SCAN CODE"
+            android:textSize="30sp"
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="5dp"
+            android:gravity="center_horizontal"
+            />
+    </RelativeLayout>
+
+</FrameLayout>
