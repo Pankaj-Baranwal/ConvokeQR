@@ -44,8 +44,13 @@ public class SignInActivity extends AppCompatActivity {
                     Toast.makeText(SignInActivity.this, "USERNAME is compulsory", Toast.LENGTH_SHORT).show();
                 else if (userid.getText().toString().length() == 0)
                     Toast.makeText(SignInActivity.this, "USERID is compulsory", Toast.LENGTH_SHORT).show();
-                else
-                    submitData(username.getText().toString(), userid.getText().toString());
+                else{
+                    Toast.makeText(SignInActivity.this, "Successful", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(SignInActivity.this, OptionsActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+//                    submitData(username.getText().toString(), userid.getText().toString());
             }
         });
     }
